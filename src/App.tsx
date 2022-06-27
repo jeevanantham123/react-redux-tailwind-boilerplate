@@ -1,11 +1,12 @@
 import "./App.css";
-import { InfoIcon } from "@chakra-ui/icons";
+import { Routes, Route } from "react-router-dom";
+import HomePage from "@containers/Home";
 
 function App() {
   return (
-    <div className="flex border h-100vh justify-center items-center text-22">
-      <InfoIcon mr="10px" /> Hello World!
-    </div>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+    </Routes>
   );
 }
 
