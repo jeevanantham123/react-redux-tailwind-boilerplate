@@ -5,7 +5,7 @@ interface HomePageProps {}
 const HomePage: React.FC<HomePageProps> = () => {
   return (
     <Pagelayout>
-      <div>I am HomePage</div>
+      <div className="text-50">I am HomePage</div>
     </Pagelayout>
   );
 };

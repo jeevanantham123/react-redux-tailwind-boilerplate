@@ -1,5 +1,5 @@
 {
-  "name": "react-tailwind-boilerplate",
+  "name": "vivaham-fe",
   "private": true,
   "version": "0.0.0",
   "scripts": {
@@ -12,9 +12,11 @@
     "@chakra-ui/react": "^2.2.1",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
+    "@reduxjs/toolkit": "^1.8.3",
     "framer-motion": "^6",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
+    "react-redux": "^8.0.2",
     "react-router-dom": "6"
   },
   "devDependencies": {

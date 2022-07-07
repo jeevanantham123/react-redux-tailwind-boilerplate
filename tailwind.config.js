@@ -1,3 +1,5 @@
+const { join } = require("path");
+
 const generateSpacings = (limit) => {
   const items = {};
   for (let i = 0; i <= limit; i += 2) {
@@ -25,7 +27,7 @@ const negativeSpacing = {
 };
 
 module.exports = {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: [join(__dirname, "src/**/*.{js,ts,jsx,tsx}")],
   theme: {
     spacing: {
       ...spacing,
