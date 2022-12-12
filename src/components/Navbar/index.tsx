@@ -1,6 +1,7 @@
 import { Box, Button } from "@chakra-ui/react";
 import { RootState } from "@common/store";
-import { decrement, increment } from "@common/store/counterSlice";
+import { decrement, increment } from "@common/store/counter/slice";
+import { ACTIONS } from "@common/store/sagaActions";
 import { useDispatch, useSelector } from "react-redux";
 
 interface NavbarProps {}
@@ -11,9 +12,13 @@ const Navbar: React.FC<NavbarProps> = () => {
   return (
     <Box gap="20px">
       <h2>Navbar</h2>
-      <Button onClick={() => dispatch(decrement())}>Decrement</Button>
+      <Button onClick={() => dispatch({ type: ACTIONS.DECREMENT })}>
+        Decrement
+      </Button>
       {count}
-      <Button onClick={() => dispatch(increment())}>Increment</Button>
+      <Button onClick={() => dispatch({ type: ACTIONS.INCREMENT })}>
+        Increment
+      </Button>
     </Box>
   );
 };
